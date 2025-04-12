@@ -20,6 +20,9 @@ ol {
 h1, h2, h3, h4, h5, h6, p {
 margin: 0;
 }
+img{
+    display: block;
+}
 a {
     text-decoration: none;
 }
@@ -120,6 +123,7 @@ gap: 40px;
 
     background: #2e2f42;
     text-align: center;
+    padding: 188 0;
         
 }
 
@@ -137,7 +141,9 @@ gap: 40px;
     border-radius: 4px;
     padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    margin-bottom: 68px;
+    margin-bottom: 68px auto;
+    display: block;
+    min-width: 169px;
 }
 
 .main-page-title {
@@ -179,6 +185,9 @@ background: #404bbf;
     align-items: center;
     gap: 24px;
 }
+.text-list{
+    width: calc((100% - 72px) / 4);
+}
 
 .desc-page {
     font-family: "Roboto", sans-serif;
@@ -189,6 +198,7 @@ background: #404bbf;
     font-weight: 500;
     font-size: 20px;
     margin-bottom: 8px;
+
 }
 
 .desc-page-text {
@@ -251,9 +261,9 @@ background: #404bbf;
         text-align: center;
 }
 
-.desc{
+.desc-text{
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+        font-weight: 400;
         font-size: 16px;
     
         /* line-height: 24px; */
@@ -261,19 +271,33 @@ background: #404bbf;
         letter-spacing: 0.02em;
         text-align: center;
         color: #434455;
-        text-align: left;
+        text-align: center;
 }
 
 .item-portfolio{
     display: flex;
     gap: 24px;
     flex-wrap: wrap;
+    row-gap: 48px;
 }
 
 .porfolio-item{
     width: 360px;
         height: 420px;
         background: #fff;
+}
+
+.desc {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    /* line-height: 24px; */
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+    text-align: left;
 }
 
 .box-portf{
@@ -288,7 +312,8 @@ background: #404bbf;
 
 .footer-page{
     background: #2e2f42;
-    padding: 100px 0;
+    padding-top: 100px;
+        padding-bottom: 100px;
 }
 .footer-logo-span{
     font-family: "Raleway", sans-serif;
@@ -300,6 +325,8 @@ background: #404bbf;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #f4f4fd;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .footer-text{
     font-family: "Roboto", sans-serif;
@@ -311,5 +338,5 @@ background: #404bbf;
         letter-spacing: 0.02em;
         color: #f4f4fd;
         margin-top: 16px;
-        width: 264px;
+        max-width: 264px
 }
