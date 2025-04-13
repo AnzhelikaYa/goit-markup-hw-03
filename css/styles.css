@@ -123,7 +123,9 @@ gap: 40px;
 
     background: #2e2f42;
     text-align: center;
-    padding: 188 0;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    
         
 }
 
@@ -141,9 +143,10 @@ gap: 40px;
     border-radius: 4px;
     padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    margin-bottom: 68px auto;
+    margin-bottom: 68px;
     display: block;
     min-width: 169px;
+
 }
 
 .main-page-title {
@@ -339,4 +342,7 @@ background: #404bbf;
         color: #f4f4fd;
         margin-top: 16px;
         max-width: 264px
+}
+.footer-logo{
+    display: inline-block;
 }
